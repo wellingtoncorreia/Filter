@@ -1,0 +1,22 @@
+<div class="container my-4">
+  <!-- Botões de Filtro -->
+  <div class=" mb-4  d-flex justify-content-center gap-3" role="group" aria-label="Filter buttons">
+    <button (click)="filterProducts('All')" class="btn btn-secondary">All</button>
+    <button (click)="filterProducts('Beverage')" class="btn btn-secondary">Beverage</button>
+    <button (click)="filterProducts('Coffee')" class="btn btn-secondary">Coffee</button>
+  </div>
+
+  <!-- Grid de Produtos -->
+  <div class="row d-flex justify-content-center">
+    <div *ngFor="let product of filteredProducts" class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="card h-100">
+        <img [src]="product.image" alt="{{ product.name }}" class="card-img-top" style="height: 200px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">{{ product.name }}</h5>
+          <p class="card-text text-muted">{{ product.category }}</p>
+          <p class="card-text font-weight-bold">{{ product.price | currency }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
