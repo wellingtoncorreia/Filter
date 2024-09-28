@@ -1,5 +1,10 @@
 # Angular Product Filter
 
+Veja o projeto:
+https://wellingtoncorreia.github.io/Filter/
+![image](https://github.com/user-attachments/assets/e2504d45-4737-4957-80ee-d2b018254557)
+
+
 Este é um projeto simples em Angular que exibe uma lista de produtos e permite filtrá-los por categorias. O layout foi desenvolvido utilizando Bootstrap para tornar a interface mais apresentável e responsiva.
 
 ## Funcionalidades
